@@ -81,7 +81,7 @@ class GalleryActivity : AppCompatActivity() {
     private fun saveImage() {
         val fileName = System.currentTimeMillis().toString() + ".jpg"
         gpuImageView.saveToPictures("GPUImage", fileName) { uri ->
-            Toast.makeText(this, "Saved: " + uri.toString(), Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Saved: $uri", Toast.LENGTH_SHORT).show()
         }
     }
 

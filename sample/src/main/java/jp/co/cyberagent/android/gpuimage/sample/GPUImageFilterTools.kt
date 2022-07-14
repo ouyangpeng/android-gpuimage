@@ -22,6 +22,16 @@ import android.graphics.BitmapFactory
 import android.graphics.PointF
 import android.opengl.Matrix
 import jp.co.cyberagent.android.gpuimage.filter.*
+import jp.co.cyberagent.android.gpuimage.filter.group.*
+import jp.co.cyberagent.android.gpuimage.filter.group.twofilter.GPUImageBoxBlurFilter
+import jp.co.cyberagent.android.gpuimage.filter.group.twofilter.GPUImageDilationFilter
+import jp.co.cyberagent.android.gpuimage.filter.group.twofilter.GPUImageGaussianBlurFilter
+import jp.co.cyberagent.android.gpuimage.filter.group.twofilter.GPUImageRGBDilationFilter
+import jp.co.cyberagent.android.gpuimage.filter.threexthree.*
+import jp.co.cyberagent.android.gpuimage.filter.twoinput.*
+import jp.co.cyberagent.android.gpuimage.filter.twoinput.GPUImageAddBlendFilter
+import jp.co.cyberagent.android.gpuimage.filter.twoinput.mixblend.GPUImageAlphaBlendFilter
+import jp.co.cyberagent.android.gpuimage.filter.twoinput.mixblend.GPUImageDissolveBlendFilter
 import java.util.*
 
 object GPUImageFilterTools {
